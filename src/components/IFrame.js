@@ -21,7 +21,7 @@
 //   };
 
 import { useState } from "react";
-import Comments from "./Comments";
+import Comment from "./Comment";
 import LikeButtons from "./LikeButtons";
 
 const IFrame = ({
@@ -55,10 +55,9 @@ const IFrame = ({
         <div>
           <h2>{`${comments.length} Comments`}</h2>
           {comments?.map((comment) => {
-            console.log(comment);
             return (
-              <div>
-                <Comments {...comment} />
+              <div key={comment}>
+                <Comment {...comment} />
                 <LikeButtons {...comment} />
               </div>
             );

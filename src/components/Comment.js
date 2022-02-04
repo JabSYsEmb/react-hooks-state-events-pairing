@@ -11,7 +11,7 @@
 //       },
 //     ],
 
-const Comments = ({ user, comment }) => {
+const Comment = ({ user, comment }) => {
   return (
     <div>
       <h3>{user}</h3>
@@ -20,4 +20,4 @@ const Comments = ({ user, comment }) => {
   );
 };
 
-export default Comments;
+export default Comment;
